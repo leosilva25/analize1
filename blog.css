@@ -1,0 +1,102 @@
+#blog{
+    background-image: url(images/fundos/fundo\ azul.png);
+    height: 700px;
+}
+
+.cardsBlog{
+   max-width: 300px;
+}
+
+#containerCardsBlog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    gap: 40px;
+}
+
+#cardBlog1{
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#cardBlog2{
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    height: 600px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#cardBlog3{
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    height: 600px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#imageCardBlog1 > img{
+   width: 300px;
+   height: 350px;
+   border-radius: 10px 10px 0px 0px;
+}
+
+#imageCardBlog2 > img{
+   width: 300px;
+   height: 350px;
+   border-radius: 10px 10px 0px 0px;
+}
+
+#imageCardBlog3 > img{
+   width: 300px;
+   height: 350px;
+   border-radius: 10px 10px 0px 0px;
+}
+
+#txtCardBlog1{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#txtCardBlog2{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#txtCardBlog3{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.btnBlog{
+    background-color: #104896;
+    width: 150px;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid #104896;
+}
+
+.btnBlog:hover{
+    background-color: #103364;
+}
+
+

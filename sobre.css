@@ -1,0 +1,54 @@
+/* Container que segura a foto e o texto */
+#containerMain { 
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important; 
+  flex-wrap: wrap;/* Centraliza em vez de jogar pros cantos */
+  gap: 50px !important; /* Força um espaço fixo e bonito entre foto e texto */
+  width: 90% !important;
+  max-width: 1100px !important; /* Impede de esticar demais */
+  margin: 40px auto !important; /* Centraliza a seção inteira na tela */
+}
+
+#empresa{
+    padding-top: 100px;
+    margin-right: 60px;
+    padding-bottom: 100px;
+}
+
+/* Garante que a div da foto não estoure */
+#imageQuemSomos {
+  flex: 0 0 23%; /* Força a foto a ter tamanho fixo */
+}
+
+#imageQuemSomos img {  
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px; /* Opcional */
+  margin-top: -25px;
+}
+
+/* Garante que a div do texto ocupe o resto do espaço com folga */
+#text {
+  flex: 1; /* Pega o restante da largura de forma proporcional */
+}
+
+.texto{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#slogan{
+    font-size: 16px;
+    color:#104896;
+}
+
+#sub-titulo{
+     border-bottom: 1px solid rgba(128, 128, 128, 0.767);
+     margin-left: 100px;
+     max-width: 75vw;
+}
+
+#sub-titulo > h2{
+    color:#104896;
+}

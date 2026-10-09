@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="keyframes.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body onresize="mudouTamanho()">
+
+       
+    <header style="border-bottom: 1px solid rgba(0, 0, 0, 0.123);">
+        <a href="index.html"><img style="width: 100px;" src="images/logo/logo-removebg-preview.png" alt=""></a>
+
+        <div id="menu">
+            <i style="color: black;" onclick="clickMenu()" id="burguer" class="material-icons">menu</i>
+            <nav id="itens">
+              <a class="navegation" href="index.html">Home</a>
+              <a class="navegation" href="index.html#quemsomos">Quem Somos</a>
+              <a class="navegation" href="index.html#services">Serviços</a>
+              <a class="navegation" href="blog.html">Blog</a>
+              <a class="navegation" href="#rodape">Contato</a>
+            </nav>
+        </div>
+        
+    </header>
+
+
+    <form   action="https://api.staticforms.xyz/submit" method="post">
+       <div class="form-txt">
+           <div class="form">
+               <legend>Dúvidas ? Deixe sua mensagem</legend>
+               <p>
+                <input type="email" name="email" id="email" required  placeholder="Digite seu Email">
+               </p>
+               <p>
+                <input type="number" name="phone" id="phone" required placeholder="Digite seu Número">
+               </p>
+               <p>
+                <input type="text" name="name" id="name"  required placeholder="Digite seu Nome">
+               </p>
+
+
+               <textarea style="width: 800px; height: 200px;" name="message" placeholder="Digite sua Dúvida" id="name"></textarea>
+
+               <input type="submit" value="Enviar">
+                  
+           </div>
+       </div>
+       <input type="hidden" name="accessKey" value="f954ee26-51b3-4b3c-bbf3-8180a7a8b9e5">
+       <input type="hidden" name="redirectTo" value="index.html">
+       
+    </form>
+    
+    <footer>
+         
+        <div id="icons">
+            <span class="links"><img style="width: 40px;" src="images/icons/Email.png"  alt="email">pfconsultoria@consultoriaempresarialpf.com</span>
+            <a class="links" style="color: white; text-decoration: none;" target="_blank" href="https://www.instagram.com/pf_consultoria_empresarial"><img style="width: 40px;" src="images/icons/Instagram.png" alt="instagram">pf_consultoria_empresarial</a></a>
+            <a class="links" style="color: white; text-decoration: none;" target="_blank" href="https://wa.me/5554991751969/?text=Vamos continuar o seu atendimento aqui com a Consultoria PF ?"><img style="width: 40px;" src="images/icons/WhatsApp.png" alt="whatsapp">(54) 99175-1969  </a> 
+        </div>
+        <span style="padding-top: 20px; padding-bottom: 10px; color: white;">&copy;Todos os direitos reservados PF Consultoria Empresarial 2024</span>
+        <span style="color: white;" >Desenvolvido Por <a target="_blank" style="color: white;" href="https://github.com/leosilva25">Oliveira Web Works</a></span>
+</footer>
+    
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+#contato{
+    background-color: white;
+    background-image: url(images/fundos/Fundo\ Azul\ com\ Ondas\ Abstratas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteinContato{
+    color: #104896;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#contatoLink > button{
+    background-color: #104896d8;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #104896;
+    border-radius: 12px;
+}
+
+#contatoLink > button:hover{
+    background-color: #104896;
+    cursor: pointer;
+}
+
+#contatoLink > button{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#spanContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+#iconContato{
+    font-size: 35px;
+}

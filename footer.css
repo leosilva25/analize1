@@ -1,0 +1,55 @@
+footer{
+   background-color: #021740;
+   height: 330px;
+   display: flex;
+}
+
+#rodape{
+   color: white;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   justify-content: center;
+}
+
+#tituloFooter{
+    margin-top: 5px;
+    margin-left: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid white;
+    width: 90vw;
+}
+
+#paragrafo{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#autoria{
+    margin-left: 40px;
+}
+
+#social-midia{
+    
+    margin-left: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+#social-midia > a >I{
+    color: white;
+}
+
+#social-midia >a:hover{
+    text-decoration: underline;
+}
+
+#social-midia > i{
+    margin-left: 20px;
+}
+
+#social-midia > a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap');
+
+h1, h2, h3, h4, .slogan {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body, p, a, li {
+  font-family: 'Inter', sans-serif;
+
+}
