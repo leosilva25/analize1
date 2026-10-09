@@ -1,8 +1,4 @@
-const button = document.getElementById("formulario");
-const btnBlog = document.getElementById("btn-blog");
-const btnBlog2 = document.getElementById("btn-blog2");
-const btnBlog3 = document.getElementById("btn-blog3");
-const btnServicos = document.getElementById("btn-area");
+
 
 button.addEventListener("click", function(){
     window.open("formulario.html", "_self");
