@@ -1,6 +1,7 @@
-&{
+*{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -18,6 +19,51 @@ body{
     justify-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    margin-top: 40px; 
+    margin-bottom: 100px;
+}
+
+header{
+    background-color: white;
+    border-bottom: 1px solid white;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+li > a{
+    color: #104896;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#imgLogo{
+    width: 8%;
+}
+
+.cards{
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 12px;
+}
+
+#card6{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards > h4{
+    margin-bottom: 10px;
+    color: #104896;
 }
 
 #container{
@@ -29,9 +75,14 @@ body{
 }
 
 .cards{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 300px;
     height: 200px;
+}
+
+li >a:hover{
+    text-decoration: underline;
+    color: blue;
 }
 
 #group1Cards{
@@ -48,4 +99,153 @@ body{
        flex-wrap: wrap;
        justify-content: center;
        align-items: center;
+}
+
+
+/* ===== RESPONSIVIDADE DA PÁGINA ÁREAS DE ATUAÇÃO ===== */
+@media (max-width: 900px) {
+    body > header {
+        padding: 16px 24px;
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    #imgLogo {
+        width: 130px;
+        max-width: 35%;
+        height: auto;
+    }
+
+    body > header nav {
+        max-width: 100%;
+    }
+
+    body > header nav > ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    body > header nav > ul > li > a {
+        font-size: 15px;
+    }
+
+    #containerCards {
+        width: 100%;
+        padding: 0 22px;
+        margin-top: 28px;
+        margin-bottom: 60px;
+    }
+
+    #container {
+        width: 100%;
+        gap: 24px;
+    }
+
+    #group1Cards,
+    #group2Cards {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .cards {
+        width: calc(50% - 12px);
+        max-width: 420px;
+        height: auto;
+        min-height: 200px;
+        padding: 20px 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .cards p {
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 600px) {
+    body > header {
+        padding: 14px 16px;
+        gap: 14px;
+    }
+
+    #imgLogo {
+        width: 112px;
+        max-width: 45%;
+    }
+
+    body > header nav {
+        width: 100%;
+    }
+
+    body > header nav > ul {
+        gap: 10px 14px;
+    }
+
+    body > header nav > ul > li > a {
+        font-size: 13px;
+    }
+
+    #containerCards {
+        padding: 0 15px;
+        margin-top: 22px;
+        margin-bottom: 40px;
+        gap: 20px;
+    }
+
+    #container {
+        width: 100%;
+        gap: 20px;
+    }
+
+    #group1Cards,
+    #group2Cards {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .cards {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+        height: auto;
+        min-height: 0;
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    .cards > h4 {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .cards p {
+        font-size: 14px;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+
+    footer {
+        height: auto;
+        min-height: 0;
+        padding: 28px 18px;
+    }
+
+    #rodape {
+        width: 100%;
+        gap: 22px;
+    }
+
+    #tituloFooter,
+    #autoria,
+    #social-midia {
+        width: 100%;
+        margin-left: 0;
+        overflow-wrap: anywhere;
+    }
+
+    #social-midia {
+        flex-direction: column;
+        gap: 14px;
+    }
 }

@@ -8,6 +8,12 @@
     justify-items: center;
 }
 
+.predio{
+    border-radius: 7px 7px 0px 0px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 #container1{
     display: flex;
     flex-direction: row;
@@ -19,6 +25,19 @@
 
 #titulo-area{
     color: #104896;
+}
+
+.areaTitulo{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #104896;
+    font-size: 18px;
+}
+
+.txtArea{
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 #container-pai{
@@ -37,19 +56,10 @@
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-items: center;
     align-items: center;
     border-radius: 8px;
     border: 1px solid #104896;
-}
-
-#gestaoInteligencia{
-    margin-top: 10px;
-}
-
-.predio{
-    padding-left: 10px;
+    
 }
 
 #before{
@@ -80,3 +90,113 @@
     background-color: #104896;
 }
 
+/* ===== RESPONSIVIDADE DA SEÇÃO ÁREAS DE ATUAÇÃO ===== */
+@media (max-width: 900px) {
+    #area {
+        height: auto;
+        min-height: 0;
+        padding: 55px 24px;
+    }
+
+    #container1 {
+        width: 100%;
+        gap: 18px;
+    }
+
+    #before, #after {
+        width: min(22vw, 260px);
+    }
+
+    #container-pai {
+        width: 100%;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .area-atuacao {
+        width: min(100%, 230px);
+        min-width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #area {
+        padding: 42px 16px;
+    }
+
+    #container1 {
+        gap: 10px;
+    }
+
+    #before, #after {
+        width: 9vw;
+        flex-shrink: 1;
+    }
+
+    #titulo-area {
+        min-width: 0;
+        text-align: center;
+    }
+
+    #titulo-area h3 {
+        font-size: clamp(17px, 4.8vw, 22px) !important;
+        line-height: 1.3;
+    }
+
+    #container-pai {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin-top: 26px;
+    }
+
+    .area-atuacao {
+        width: 100%;
+        height: auto;
+        min-height: 185px;
+        padding: 10px 8px;
+        min-width: 0;
+    }
+
+    .area-atuacao img,
+    .predio {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .areaTitulo {
+        font-size: 15px;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .txtArea {
+        font-size: 13px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    #btn-area {
+        width: min(200px, 100%);
+    }
+}
+
+@media (max-width: 360px) {
+    #container-pai {
+        gap: 10px;
+    }
+
+    .area-atuacao {
+        min-height: 165px;
+        padding: 8px 6px;
+    }
+
+    .areaTitulo {
+        font-size: 13px;
+    }
+
+    .txtArea {
+        font-size: 12px;
+    }
+}
